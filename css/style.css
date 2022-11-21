@@ -1,0 +1,124 @@
+/* CSS Reset */
+* { 
+    padding: 0;
+    margin: 0 ;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+/* Start main styling */
+body {
+    background: #f7f7f7;
+    color: #333333;
+    font-family: baskerville-urw, serif;
+}
+
+/*styling for all sections, header and footer */
+section, header, footer {
+    width: 80%;
+    max-width: 700px;
+    margin:auto;
+}
+
+/*styling for all sections and header */
+section, header {
+    margin-bottom: 4rem;
+
+}
+
+/*styling for all paragraph and the blockquote */
+p, blockquote {
+    padding: 2rem 0 1rem 0;
+    line-height: 1.3;
+
+}
+
+/*styling for the head titles h1 and h2 */
+h1, h2 {
+    color: rgb(146, 15, 15);
+}
+
+/*styling for h1 title */
+h1 {
+    font-size: 5.653rem;
+    margin-top: 5rem;
+    padding-bottom: 0;
+}
+
+/*styling for h2 title */
+h2 {
+    font-size: 1.999rem;
+    margin: 3rem 0 1rem 0;
+}
+
+/*styling for quote */
+blockquote {
+    font-style: italic;
+    font-size: 1.999rem;
+    color: rgb(255, 0, 0);
+    hanging-punctuation: first;
+    text-indent: -0.7rem;
+}
+/* cited part of quote styled differently */
+blockquote cite {
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+/* Styling links */
+
+a {
+    color: rgb(255, 0, 0) ;
+    /* get rid of lines beneath links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f7f7f7;
+    border-bottom: 1px dotted;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #333333;
+    padding: 1.5rem 0;
+    font-size: 0.7rem;
+
+}
+nav ul {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px;
+    background: none;
+}
+
+nav a {
+    color: rgb(255, 0, 0);
+}
+
+nav a:hover {
+    border-bottom: none;
+    color: white;
+    /* when hovering, it is softer */
+    transition: all 0.3s ease-in-out;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 4rem;
+}
