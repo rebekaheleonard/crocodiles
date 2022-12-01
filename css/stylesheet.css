@@ -1,0 +1,237 @@
+/*-- CSS Reset --*/
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+/*-- Body Styling--*/
+
+body {
+    background: #f7f7f7;
+    color: #333333;
+    font-family: baskerville-urw, serif;
+}
+
+section, header {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+}
+
+/*Styling sections*/
+.market img {
+    padding-bottom: 3em
+}
+
+.market {
+    background: #FCF0D9;
+    padding: 1em 0;
+}
+
+.street {
+    padding: 3em 0;
+}
+
+/* Styling Grid Image */
+.imagegrid {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); 
+}
+
+/*-- Styling type in headings, paragraph and blockquotes --*/
+
+h1, h2 {
+    color: #B27723;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+p, blockquote, h1 {
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 5.653rem;
+    padding-top: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.999rem;
+    margin: 3em 0 1em 0;
+    padding-top: -1em;
+}
+
+blockquote {
+    color: #DEA323;
+    font-size: 1.414rem;
+    font-style: italic;
+    hanging-punctuation:first;
+    text-indent: 2rem
+}
+
+p {
+    color: #333333;
+    font-size: 1.3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.market_square {
+    color: #7F5519;
+}
+
+
+.enlarge {
+    text-transform: uppercase
+}
+
+.O {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    font-size: 5rem;
+    padding-right: .1em;
+    line-height: .5;
+    color: #B27723;
+}
+
+
+/*-- Styling links --*/
+a {
+    color: #C6852A;
+    text-decoration: none
+}
+
+a:hover {
+    color: #f7f7f7;
+}
+
+/*-- Styling nav --*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    background: #C6852A;
+    padding: 2em 0;
+    font-size: 0.8rem;
+}
+
+nav ul {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px
+}
+
+nav a {
+    color: #f7f7f7;
+}
+
+nav a:hover {
+    border-bottom: none;
+    color: #333333;
+    transition: all 0.3s ease-in-out
+}
+
+hr {
+    margin: 100px 0;
+    height: 1px;
+    background-color: #C6852A;
+    color: #C6852A;
+    border: 0 none;
+}
+
+
+
+/*Image styling */
+img {
+    display: block;
+    padding: 0;
+    max-width: 100%;
+}
+
+
+/* Footer Styling */
+footer {
+    background: #C6852A;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #f7f7f7;
+    padding: 4em 0 3em 0
+}
+
+footer p {
+    margin: .5em
+}
+
+.contact{
+    position: relative;
+    margin: 0 auto;
+}
+
+.contact ul{
+        margin: 1;
+        padding: 1em;
+}
+.contact li{
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+.contact a:link{
+    border-bottom: none;
+}
+.contact img, .contact svg{
+    border: none;
+}
+.contact a:hover img, .contact a:hover svg{
+    border-bottom: none;}
+        
+.contact svg {
+    margin: 1em auto;}
+        
+.contact a:hover svg path {
+    fill: #333333;
+    transition: all 0.5s ease-in-out;}
+        
+footer .contact a:hover svg path {
+    fill: #333333;
+    transition: all 0.5s ease-in-out;}
+
+.contactme {
+    color: #f7f7f7;
+}
+
+
+@media only screen and (max-width: 900px) {
+            .gridimage {
+              display: grid;
+              grid-gap: 20px;
+              grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+              padding-bottom: 2em;}
+
+              h1 {
+                font-size: 4.5rem
+            }}
+
+@media only screen and (max-width: 650px) {
+    h1 {
+        font-size: 3rem
+    }
+
+    header h2 {
+        font-size: 1.5rem
+    }
+}
